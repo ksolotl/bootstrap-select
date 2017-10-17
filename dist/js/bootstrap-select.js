@@ -1576,7 +1576,7 @@
 
     keydown: function (e) {
       var $this = $(this),
-          $parent = $this.is('input') ? $this.parent().parent() : $this.parent(),
+          $parent = $this.is('input') ? $this.parent().parent().parent() : $this.parent(),
           $items,
           that = $parent.data('this'),
           index,
